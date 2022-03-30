@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  list-style: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-image: linear-gradient(to top, #20073f 0%, #5912af 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+#navBar {
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  background-color: #290650;
+  border-bottom: white 1px solid;
+  z-index: 10;
+}
+
+#navBarArea {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navBarLogo {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navBarLogo img {
+  height: 90%;
+  margin: auto;
+}
+
+.navBarList {
+  width: 50%;
+}
+
+.navBarUL {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: inherit;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.navBarItems {
+  text-align: center;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content {
+  padding: 0 10vw 0 10vw;
+}
+
+#contactMe {
+  width: 10vw;
+  height: 35vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.innerContactMe {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactIcon {
+  width: 100%;
+  margin: auto;
+}
+
+.allLogos {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#welcome {
+  height: 91vh;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 7vh;
+}
+
+.welcomeContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.welcomeContentFirst {
+  text-shadow: 0px 6px 6px rgba(105, 25, 196, 0.5);
+  margin-top: auto;
+}
+
+#welcomeBanner {
+  margin-top: auto;
+  height: 50px;
+}
+
+.heroBox {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  z-index: 1;
+}
+
+.heroChar {
+  position: absolute;
+  filter: drop-shadow(0 0 3px white);
+  z-index: 1;
+
+  -webkit-animation: vibrate-1 5s linear infinite both;
+  animation: vibrate-1 5s linear infinite both;
+}
+
+.heroCharBack {
+  filter: drop-shadow(0 0 1px white);
+}
+
+.banner {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  box-shadow: 0 0 10px 1px white;
+}
+
+.bannerContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.techUsed {
+  height: 80%;
+  width: 10%;
+  margin: auto;
+}
+
+.techUsedPNG {
+  height: 90%;
+  margin: auto;
+}
+
+#projects {
+  margin-top: 10vh;
+}
+
+#projectsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.allProjects {
+  margin: auto;
+  width: 240px;
+  height: 250px;
+  margin: 50px 50px 50px 50px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -1px #494949, 5px 5px 15px 5px rgba(180, 12, 12, 0);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.cardHeader {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  -webkit-box-shadow: inset -1px -8px 15px -2px rgba(0, 0, 0, 0.81);
+  box-shadow: inset -1px -8px 15px -2px rgba(0, 0, 0, 0.81);
+}
+
+.cardImg {
+  height: 100%;
+}
+
+.cardBody {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  text-align: center;
+  height: 70px;
+}
+
+.cardName {
+  width: 100%;
+  background-color: #20073f;
+  height: 30px;
+  border-top: rgba(255, 255, 255, 0.315) 1px solid;
+  border-bottom: rgba(255, 255, 255, 0.315) 1px solid;
+}
+
+.cardBtnDiv {
+  width: 100%;
+  height: 40px;
+}
+
+.cardBtn {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #20073f, #5210a1, #7118df, #20073f);
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  padding: 0;
+}
+
+button:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+button:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+#about {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#about .innerAbout {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aboutText {
+  width: 55%;
+}
+
+.aboutPic {
+  width: 40%;
+  display: flex;
+}
+
+.profilePic {
+  width: 75%;
+  height: 75%;
+  margin: auto;
+}
+
+.profilePic img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin: auto;
+  filter: drop-shadow(0 0 3px white);
+}
+
+.contactButton {
+  width: 100%;
+  height: 40px;
+  margin: 2% 0 2% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contactButton button {
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(-45deg, #20073f, #5210a1, #7118df, #20073f);
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  padding: 0;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 3px white);
+}
+
+@media (max-width: 480px) {
+  #welcome {
+  }
+
+  .welcomeContent {
+    margin-top: 10%;
+  }
+
+  #contactMe {
+    position: relative;
+    width: 100%;
+    height: 5vh;
+  }
+
+  .innerContactMe {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .contactIcon {
+    height: 100%;
+    width: unset;
+  }
+
+  .heroBox {
+    position: relative;
+    max-width: 100%;
+    right: 0;
+    top: 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
