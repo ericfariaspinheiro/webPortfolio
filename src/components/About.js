@@ -9,12 +9,11 @@ export default function About () {
                     <br />
                     <h3>I am a front-end developer <br /> based in Rio de Janeiro, Brazil</h3>
                     <br />
-                    <p> I have always been interested in how technologies work, specially the web. 
-                        Getting to know it better and working to push it even further is my goal.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, consectetur!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ipsa ducimus recusandae voluptatum veniam exercitationem.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptate molestias laudantium assumenda quisquam asperiores.
+                    <p className="textIndent"> I have always been interested in how technologies work, specially the web. 
+                        Getting to know its ins and outs and working to push it even further is my goal.
+                        Previously I worked with API documentation and Testing Automation, but now I am aiming to make a career shift to software development.
                     </p>
+                    
                 </section>
                 <section className="aboutPic">
                     <div className="profilePic">

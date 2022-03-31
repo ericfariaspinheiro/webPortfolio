@@ -294,6 +294,7 @@ button:active {
 .aboutPic {
   width: 40%;
   display: flex;
+  margin: auto;
 }
 
 .profilePic {
@@ -319,7 +320,7 @@ button:active {
 }
 
 .contactButton button {
-  width: 20%;
+  width: 180px;
   height: 100%;
   background: linear-gradient(-45deg, #20073f, #5210a1, #7118df, #20073f);
   background-size: 800% 400%;
@@ -336,9 +337,29 @@ button:active {
   filter: drop-shadow(0 0 3px white);
 }
 
+.textIndent {
+  text-align: justify;
+}
+
 @media only screen and (max-width: 480px) {
+  .navBarList {
+    width: 54%;
+  }
+
+  .navBarItems a {
+    font-size: 14px;
+  }
+
   .welcomeContent {
-    margin-top: 10%;
+    margin-top: 20%;
+  }
+
+  .heroBox {
+    padding-top: 15%;
+  }
+
+  .welcomeContentThird {
+    font-size: x-large;
   }
 
   #contactMe {
@@ -365,6 +386,18 @@ button:active {
     max-width: 100%;
     right: 0;
     top: 0;
+  }
+
+  .aboutText {
+    width: 100%;
+  }
+
+  .aboutText h2 {
+    text-align: center;
+  }
+
+  .aboutPic {
+    padding: 10% 0 10% 0;
   }
 }
 

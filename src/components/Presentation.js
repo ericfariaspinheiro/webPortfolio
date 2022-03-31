@@ -19,7 +19,7 @@ export default function Presentation () {
             <div className="welcomeContent">
                 <p className="welcomeContentFirst">Hello, my name is</p>
                 <h1> Eric Pinheiro. </h1>
-                <h2> I'm a web developer! </h2>
+                <h2 className="welcomeContentThird"> I'm a web developer! </h2>
             </div>
             <Contact />
             <Hero />
