@@ -1,15 +1,17 @@
-export default function Card (){
+export default function Card (props){
     return(
-        <div className="card">
-            <div className="cardHeader">
-                <img className="cardImg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-keep-ducks-call-ducks-1615457181.jpg?resize=980:*" alt="duck" />
-            </div>
-            <div className="cardBody">
-                <div className="cardName">
-                    <p>Project Name</p>
+        <div className="allProjects">
+            <div className="card">
+                <div className="cardHeader">
+                    <img className="cardImg" src={props.cardImage} alt="duck" />
                 </div>
-                <div className="cardBtnDiv">
-                    <button className="cardBtn">Show me the code!</button>
+                <div className="cardBody">
+                    <div className="cardName">
+                        <p>{props.name}</p>
+                    </div>
+                    <div className="cardBtnDiv">
+                        <a href={props.link} className="button cardBtn" target="_blank" rel="noreferrer">Show me the code!</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -14,8 +14,8 @@ ul {
 }
 
 body {
-  font-family: Verdana, sans-serif;
   background-image: linear-gradient(to top, #20073f 0%, #5912af 100%);
+  background-color: #20073f;
 }
 
 img {
@@ -28,7 +28,7 @@ img {
   position: fixed;
   width: 100%;
   height: 7vh;
-  background-color: #290650;
+  background-color: #20073f;
   border-bottom: white 1px solid;
   z-index: 10;
 }
@@ -45,12 +45,12 @@ img {
 .navBarLogo {
   width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  align-items: center;
 }
 
 .navBarLogo img {
   height: 90%;
-  margin: auto;
 }
 
 .navBarList {
@@ -60,10 +60,8 @@ img {
 .navBarUL {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  height: inherit;
   height: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .navBarItems {
@@ -73,6 +71,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.navBarItems a {
+  padding: 15px 0 15px 0;
+  margin: 0 5px 0 5px;
 }
 
 #content {
@@ -183,7 +186,7 @@ img {
   margin-top: 10vh;
 }
 
-#projectsGrid {
+.projectsContainer{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -193,7 +196,7 @@ img {
 .allProjects {
   margin: auto;
   width: 240px;
-  height: 250px;
+  height: 300px;
   margin: 50px 50px 50px 50px;
 }
 
@@ -212,41 +215,38 @@ img {
 
 .cardHeader {
   width: 100%;
-  height: 180px;
-  text-align: center;
-  -webkit-box-shadow: inset -1px -8px 15px -2px rgba(0, 0, 0, 0.81);
-  box-shadow: inset -1px -8px 15px -2px rgba(0, 0, 0, 0.81);
+  height: 200px;
 }
 
 .cardImg {
   height: 100%;
+  width: 100%;
 }
 
 .cardBody {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   text-align: center;
-  height: 70px;
+  height: 100px;
 }
 
 .cardName {
   width: 100%;
+  height: 40px;
   background-color: #20073f;
-  height: 30px;
   border-top: rgba(255, 255, 255, 0.315) 1px solid;
   border-bottom: rgba(255, 255, 255, 0.315) 1px solid;
+  display: flex;
+}
+
+.cardName p {
+  margin: auto;
 }
 
 .cardBtnDiv {
   width: 100%;
-  height: 40px;
-}
-
-.cardBtn {
-  width: 100%;
-  height: 100%;
+  height: 60px;
   background: linear-gradient(-45deg, #20073f, #5210a1, #7118df, #20073f);
   background-size: 800% 400%;
-  padding: 1em 2em;
   display: inline-block;
   border: none;
   font-size: 17px;
@@ -254,7 +254,13 @@ img {
   color: white;
   transition: all 0.5s ease-in-out;
   animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
-  padding: 0;
+}
+
+.cardBtn {
+  width: 100%;
+  height: 100%;
+  
+
 }
 
 button:hover {
@@ -342,8 +348,12 @@ button:active {
 }
 
 @media only screen and (max-width: 480px) {
+  #navBarArea {
+    width: 100%;
+  }
+
   .navBarList {
-    width: 54%;
+    width: 56%;
   }
 
   .navBarItems a {
