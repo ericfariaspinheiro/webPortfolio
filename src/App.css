@@ -21,7 +21,6 @@ body {
 img {
   max-width: 100%;
   display: block;
-  object-fit: cover;
 }
 
 #navBar {
@@ -35,7 +34,7 @@ img {
 
 #navBarArea {
   width: 95%;
-  height: 100%;
+  height: 7vh;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -43,18 +42,29 @@ img {
 }
 
 .navBarLogo {
-  width: auto;
+  width: fit-content;
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-left: 5px;
 }
 
 .navBarLogo img {
   height: 90%;
 }
 
-.navBarList {
-  width: 50%;
+.burgerNav {
+  width: 40px;
+  height: 100%;
+  margin: 0 15px 0 15px;
+  visibility: hidden;
+}
+
+.burgerNav img {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .navBarUL {
@@ -62,6 +72,9 @@ img {
   flex-direction: row;
   height: 100%;
   justify-content: space-between;
+  font-size: 17px;
+  width: 40%;
+  margin-left: auto;
 }
 
 .navBarItems {
@@ -75,7 +88,6 @@ img {
 
 .navBarItems a {
   padding: 15px 0 15px 0;
-  margin: 0 5px 0 5px;
 }
 
 #content {
@@ -194,8 +206,7 @@ img {
 }
 
 .allProjects {
-  margin: auto;
-  width: 240px;
+  width: 280px;
   height: 300px;
   margin: 50px 50px 50px 50px;
 }
@@ -203,7 +214,7 @@ img {
 .card {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -240,6 +251,7 @@ img {
 
 .cardName p {
   margin: auto;
+  font-weight: 400;
 }
 
 .cardBtnDiv {
@@ -250,27 +262,26 @@ img {
   display: inline-block;
   border: none;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   transition: all 0.5s ease-in-out;
   animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  display: flex;
+  flex-direction: row;
+}
+
+.cardBtnDiv a {
+  width: 50%;
+  margin: auto;
+  padding: 15px 5px 15px 5px;
+}
+.cardBtnDiv div {
+  height: 100%;
+  border: rgba(255, 255, 255, 0.315) 1px solid;
 }
 
 .cardBtn {
-  width: 100%;
-  height: 100%;
-  
-
-}
-
-button:hover {
-  animation: gradient 3s infinite;
-  transform: scale(1.05);
-}
-
-button:active {
-  animation: gradient 3s infinite;
-  transform: scale(0.8);
+  padding: 10px;
 }
 
 #about {
@@ -297,6 +308,11 @@ button:active {
   width: 55%;
 }
 
+.aboutText p{
+  font-size: 17px;
+  font-weight: 300;
+}
+
 .aboutPic {
   width: 40%;
   display: flex;
@@ -304,8 +320,7 @@ button:active {
 }
 
 .profilePic {
-  width: 75%;
-  height: 75%;
+  width: 55%;
   margin: auto;
 }
 
@@ -326,6 +341,7 @@ button:active {
 }
 
 .contactButton button {
+  cursor: pointer;
   width: 180px;
   height: 100%;
   background: linear-gradient(-45deg, #20073f, #5210a1, #7118df, #20073f);
@@ -334,7 +350,7 @@ button:active {
   display: inline-block;
   border: none;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   transition: all 0.5s ease-in-out;
   animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
@@ -348,12 +364,30 @@ button:active {
 }
 
 @media only screen and (max-width: 480px) {
+  #navBar.open {
+    height: 14vh;
+  }
+
   #navBarArea {
     width: 100%;
   }
 
-  .navBarList {
-    width: 56%;
+  .burgerNav {
+    visibility: visible;
+    z-index: 10;
+  }
+
+  .navBarUL {
+    position: fixed;
+    padding-top: 80px;
+    height: 20px;
+    width: 100%;
+    justify-content: space-around;
+    visibility: hidden;
+  }
+
+  .navBarUL.open {
+    visibility: visible;
   }
 
   .navBarItems a {

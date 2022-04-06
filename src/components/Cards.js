@@ -10,7 +10,9 @@ export default function Card (props){
                         <p>{props.name}</p>
                     </div>
                     <div className="cardBtnDiv">
-                        <a href={props.link} className="button cardBtn" target="_blank" rel="noreferrer">Show me the code!</a>
+                        <a href="">Live demo</a>
+                        <div></div>
+                        <a href={props.link} className="button cardBtn" target="_blank" rel="noreferrer">Code</a>
                     </div>
                 </div>
             </div>
