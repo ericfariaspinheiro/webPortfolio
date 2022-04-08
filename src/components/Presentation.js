@@ -2,6 +2,7 @@ import linkedinLogo from '../assets/linkedin-logo.png'
 import githubLogo from '../assets/github-logo.png'
 import emailLogo from '../assets/email-logo.png'
 import curriculumLogo from '../assets/resume-logo.png'
+import curriculum from '../assets/curriculo-eric.pdf'
 
 import gitLogo from '../assets/git-logo.png'
 import HTML5Logo from '../assets/html-5-logo.png'
@@ -52,12 +53,12 @@ function Contact () {
                     </a>
                 </div>
                 <div className="contactIcon">
-                    <a href="./assets/currículo-eric.pdf" target="_blank" rel="noreferrer">
+                    <a href="#contact" rel="noreferrer">
                         <img className="allLogos emailLogo" src={emailLogo} alt="email logo" />
                     </a>
                 </div>
                 <div className="contactIcon">
-                    <a href="./assets/currículo-eric.pdf" target="_blank" rel="noreferrer" >
+                    <a href={curriculum} target="_blank" rel="noreferrer" >
                         <img className="allLogos resumeLogo" src={curriculumLogo} alt="" />
                     </a>
                 </div>

@@ -9,6 +9,7 @@ export default function contact (props) {
                 <input 
                     type="text" 
                     id="nameField"
+                    className="formFields"
                     placeholder="Enter your first and last name"
                     name="name"
                     onChange={props.nameOnChange} 
@@ -17,6 +18,7 @@ export default function contact (props) {
                 <input 
                     type="text"
                     id="mailField"
+                    className="formFields"
                     placeholder="Enter your Email adress"
                     name="email"
                     onChange={props.emailOnChange}
@@ -25,6 +27,7 @@ export default function contact (props) {
                 <input 
                     type="text"
                     id="subjectField" 
+                    className="formFields"
                     placeholder="Enter the subjetct of your message"
                     name="subject"
                     onChange={props.subjectOnChange}
@@ -32,7 +35,7 @@ export default function contact (props) {
                 <label htmlFor="">Message</label>
                 <textarea 
                     name="message"
-                    onChange={props.messageOnChange} 
+                    className="formFields"
                 />
                 <input type="submit" value="SUBMIT" className="submitButton" />
             </form>

@@ -7,10 +7,17 @@ const cardContent = [
         linkLive: "https://ericfariaspinheiro.github.io/wordle-eric/",
         linkCode: "https://github.com/ericfariaspinheiro/wordle-eric"
     },
+    
+    {
+        cardImage: "https://files.tecnoblog.net/wp-content/uploads/2020/03/pomodoro-timer.jpg",
+        name: "25 + 5 Clock",
+        linkLive: "https://ericfariaspinheiro.github.io/25plus5Timer/",
+        linkCode: "https://github.com/ericfariaspinheiro/25plus5Timer"
+    },
     {
         cardImage: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Casio_calculator_JS-20WK_in_201901_002.jpg",
         name: "Calculator",
-        linkLive: "",
+        linkLive: "https://ericfariaspinheiro.github.io/Calculator-With-React/",
         linkCode: "https://github.com/ericfariaspinheiro/Calculator-With-React"
     }
 ]

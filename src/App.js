@@ -12,7 +12,6 @@ function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
 
   const nameOnChange = (updateName) => {
     const newLetterName = updateName.target.value;
@@ -27,11 +26,6 @@ function App() {
   const subjectOnChange = (updateSubject) => {
     const newLetterSubject = updateSubject.target.value;
     setSubject(newLetterSubject);
-  }
-
-  const messageOnChange = (messageSubject) => {
-    const newLetterMessage = messageSubject.target.value;
-    setMessage(newLetterMessage);
   }
 
   const validateEmailContent = (e) => {
@@ -90,7 +84,6 @@ function App() {
           nameOnChange={nameOnChange}
           emailOnChange={emailOnChange}
           subjectOnChange={subjectOnChange}
-          messageOnChange={messageOnChange}
           validateEmailContent={validateEmailContent}
         />
       </main>
