@@ -15,16 +15,24 @@ import heroBackground from '../assets/heroBackground.png'
 
 export default function Presentation () {
     return (
-        <section id="welcome">
-            <div className="welcomeContent">
-                <p className="welcomeContentFirst">Hello, my name is</p>
-                <h1> Eric Pinheiro. </h1>
-                <h2 className="welcomeContentThird"> I'm a web developer! </h2>
+        <section id="welcome" >
+            <div className="welcomeRow" >
+                <Welcome />
+                <Contact />
+                <Hero />
             </div>
-            <Contact />
-            <Hero />
             <TechBanner />
         </section>       
+    )
+}
+
+function Welcome () {
+    return (
+        <div className="welcomeContent">
+            <h2>Hello, my name is</h2>
+            <h1> Eric Pinheiro. </h1>
+            <h2> I'm a web developer! </h2>
+        </div>
     )
 }
 

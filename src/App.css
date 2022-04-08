@@ -124,48 +124,62 @@ img {
 
 #welcome {
   height: 91vh;
-  font-size: xx-large;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 7vh;
+  padding-top: 8vh;
+}
+
+.welcomeRow {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
 }
 
 .welcomeContent {
   display: flex;
   flex-direction: column;
+  width: 60%;
   margin-top: auto;
-}
-.welcomeContentFirst {
-  text-shadow: 0px 6px 6px rgba(105, 25, 196, 0.5);
-  margin-top: auto;
+  margin-bottom: auto;
 }
 
-#welcomeBanner {
-  margin-top: auto;
-  height: 50px;
+.welcomeContent h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.welcomeContent h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
 }
 
 .heroBox {
-  width: 350px;
+  width: 340px;
   height: 350px;
-  position: absolute;
-  right: 10%;
-  top: 20%;
+  position: relative;
   z-index: 1;
+  margin: auto;
+}
+
+.heroBox img {
+  position: absolute;
 }
 
 .heroChar {
-  position: absolute;
   filter: drop-shadow(0 0 3px white);
   z-index: 1;
-
   -webkit-animation: vibrate-1 5s linear infinite both;
   animation: vibrate-1 5s linear infinite both;
 }
 
 .heroCharBack {
   filter: drop-shadow(0 0 1px white);
+}
+
+#welcomeBanner {
+  margin-top: auto;
+  height: 50px;
 }
 
 .banner {
@@ -185,8 +199,8 @@ img {
 
 .techUsed {
   height: 80%;
-  width: 10%;
   margin: auto;
+  width: 20%;
 }
 
 .techUsedPNG {
@@ -196,6 +210,12 @@ img {
 
 #projects {
   margin-top: 10vh;
+}
+
+#projects h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .projectsContainer{
@@ -251,7 +271,7 @@ img {
 
 .cardName p {
   margin: auto;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .cardBtnDiv {
@@ -286,13 +306,13 @@ img {
 
 #about {
   width: 100%;
-  height: min-content;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 #about .innerAbout {
@@ -304,19 +324,42 @@ img {
   flex-wrap: wrap;
 }
 
+.innerAbout h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 50px 0;
+}
+
+.mobileReverse {
+  display: flex;
+  flex-direction: row;
+}
+
 .aboutText {
   width: 55%;
 }
 
+.aboutText h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.aboutText h3 {
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+
 .aboutText p{
-  font-size: 17px;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
 .aboutPic {
   width: 40%;
   display: flex;
-  margin: auto;
+  margin: 0 auto 10% auto;
 }
 
 .profilePic {
@@ -333,21 +376,19 @@ img {
 }
 
 .contactButton {
-  width: 100%;
   height: 40px;
-  margin: 2% 0 2% 0;
+  margin: 5% 0;
   display: flex;
   justify-content: center;
 }
 
-.contactButton button {
+.aboutText a {
+  margin: auto;
   cursor: pointer;
   width: 180px;
-  height: 100%;
   background: linear-gradient(-45deg, #20073f, #5210a1, #7118df, #20073f);
   background-size: 800% 400%;
   padding: 1em 2em;
-  display: inline-block;
   border: none;
   font-size: 17px;
   font-weight: 400;
@@ -356,11 +397,75 @@ img {
   animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
   padding: 0;
   border-radius: 10px;
-  filter: drop-shadow(0 0 3px white);
+  text-align: center;
+  line-height: 240%;
 }
 
 .textIndent {
   text-align: justify;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact h2{
+  align-self: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 20px 0 20px 0;
+}
+
+#contact h3 {
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.contactForm span{
+  color: red;
+}
+
+.contactForm input {
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.contactForm textarea {
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  resize: none;
+  color: black;
+}
+
+.submitButton {
+  cursor: pointer;
+  align-self: center;
+  width: 180px;
+  height: 40px !important;
+  background: linear-gradient(-45deg, #20073f, #5210a1, #7118df, #20073f);
+  background-size: 800% 400%;
+  border: none;
+  font-size: 17px;
+  font-weight: 350;
+  color: white !important;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
 }
 
 @media only screen and (max-width: 480px) {
@@ -379,7 +484,7 @@ img {
 
   .navBarUL {
     position: fixed;
-    padding-top: 80px;
+    padding-top: 75px;
     height: 20px;
     width: 100%;
     justify-content: space-around;
@@ -394,16 +499,9 @@ img {
     font-size: 14px;
   }
 
-  .welcomeContent {
-    margin-top: 20%;
-  }
-
-  .heroBox {
-    padding-top: 15%;
-  }
-
-  .welcomeContentThird {
-    font-size: x-large;
+  .welcomeRow {
+    flex-direction: column;
+    height: 100%;
   }
 
   #contactMe {
@@ -419,29 +517,79 @@ img {
     justify-content: space-around;
   }
 
+  .welcomeContent {
+    width: 100%;
+  }
+  .welcomeContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcomeContent h2 {
+    font-size: 2rem;
+  }
+
   .contactIcon {
     height: 60%;
     width: unset;
   }
 
   .heroBox {
-    /* display: none; */
-    position: relative;
     max-width: 100%;
-    right: 0;
-    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroBox img {
+    width: 250px;
+    margin: auto;
+  }
+
+  #about {
+    height: auto;
+    flex-direction: column;
+    margin: 15% 0;
+  }
+
+  .mobileReverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .innerAbout h2 {
+    margin: 0;
   }
 
   .aboutText {
     width: 100%;
   }
 
-  .aboutText h2 {
-    text-align: center;
-  }
-
   .aboutPic {
     padding: 10% 0 10% 0;
+    margin: 0 auto;
+  }
+
+  .profilePic {
+    width: auto;
+    padding: 6px;
+  }
+}
+
+@media only screen and (min-width: 2550px) {
+  #navBarArea {
+    width: 50%;
+  }
+
+  #content{
+    padding: 0 30%;
+  }
+
+  #welcomeBanner {
+    height: 6vh;
+  }
+
+  #contactMe {
+    width: 5vw;
   }
 }
 
