@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/webPortfolio/static/css/main.018b57ef.css",
+    "main.js": "/webPortfolio/static/js/main.760e8ccb.js",
+    "static/media/hero.png": "/webPortfolio/static/media/hero.6c20f68ad243bb61c674.png",
+    "static/media/profile-pic.png": "/webPortfolio/static/media/profile-pic.75a9969b13cadf336605.png",
+    "static/media/heroBackground.png": "/webPortfolio/static/media/heroBackground.2ec4c9c106de3662d82c.png",
+    "static/media/css-3-logo.png": "/webPortfolio/static/media/css-3-logo.3a16864308d0b64da967.png",
+    "static/media/curriculo-eric.pdf": "/webPortfolio/static/media/curriculo-eric.766c908b76941fa42bea.pdf",
+    "static/media/email-logo.png": "/webPortfolio/static/media/email-logo.ceaf3388aa172c671cb2.png",
+    "static/media/html-5-logo.png": "/webPortfolio/static/media/html-5-logo.9d7930cb38fd26e37c97.png",
+    "static/media/git-logo.png": "/webPortfolio/static/media/git-logo.dfdd0989ffe0184bdd68.png",
+    "static/media/resume-logo.png": "/webPortfolio/static/media/resume-logo.64c573a5e47f3b9379b1.png",
+    "static/media/javascript-logo.png": "/webPortfolio/static/media/javascript-logo.1df65460c4aabf160e8d.png",
+    "static/media/react-logo.png": "/webPortfolio/static/media/react-logo.367a8df5ba9c7a95160e.png",
+    "static/media/github-logo.png": "/webPortfolio/static/media/github-logo.f4d471f4d5adc48ef693.png",
+    "static/media/main-logo.png": "/webPortfolio/static/media/main-logo.ff29b6bdcea6dd5774ef.png",
+    "static/media/linkedin-logo.png": "/webPortfolio/static/media/linkedin-logo.d9b91b9c41d3cf5ef83f.png",
+    "index.html": "/webPortfolio/index.html",
+    "main.018b57ef.css.map": "/webPortfolio/static/css/main.018b57ef.css.map",
+    "main.760e8ccb.js.map": "/webPortfolio/static/js/main.760e8ccb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.018b57ef.css",
+    "static/js/main.760e8ccb.js"
+  ]
+}
