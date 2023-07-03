@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+img {
+  object-fit: cover;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,73 +25,6 @@ body {
 img {
   max-width: 100%;
   display: block;
-}
-
-#navBar {
-  position: fixed;
-  width: 100%;
-  height: 7vh;
-  background-color: #20073f;
-  border-bottom: white 1px solid;
-  z-index: 10;
-}
-
-#navBarArea {
-  width: 95%;
-  height: 7vh;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.navBarLogo {
-  width: fit-content;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-left: 5px;
-}
-
-.navBarLogo img {
-  height: 90%;
-}
-
-.burgerNav {
-  width: 40px;
-  height: 100%;
-  margin: 0 15px 0 15px;
-  visibility: hidden;
-}
-
-.burgerNav img {
-  width: 100%;
-  height: 80%;
-  margin: auto;
-  margin-top: 10px;
-}
-
-.navBarUL {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  justify-content: space-between;
-  font-size: 17px;
-  width: 40%;
-  margin-left: auto;
-}
-
-.navBarItems {
-  text-align: center;
-  width: auto;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.navBarItems a {
-  padding: 15px 0 15px 0;
 }
 
 #content {
@@ -218,7 +155,7 @@ img {
   text-align: center;
 }
 
-.projectsContainer{
+.projectsContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -238,8 +175,7 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -1px #494949, 5px 5px 15px 5px rgba(180, 12, 12, 0);
   border: 1px solid rgba(255, 255, 255, 0.37);
 }
@@ -247,6 +183,7 @@ img {
 .cardHeader {
   width: 100%;
   height: 200px;
+  background-color: white;
 }
 
 .cardImg {
@@ -351,9 +288,10 @@ img {
   font-weight: 350;
 }
 
-.aboutText p{
+.aboutText p {
   font-size: 1.3rem;
   font-weight: 300;
+  white-space: pre-wrap;
 }
 
 .aboutPic {
@@ -412,7 +350,7 @@ img {
   flex-direction: column;
 }
 
-#contact h2{
+#contact h2 {
   align-self: center;
   font-size: 2.5rem;
   font-weight: 400;
@@ -435,7 +373,7 @@ img {
   font-weight: 300;
 }
 
-.contactForm span{
+.contactForm span {
   color: red;
   font-size: large;
 }
@@ -586,7 +524,7 @@ img {
     width: 50%;
   }
 
-  #content{
+  #content {
     padding: 0 30%;
   }
 

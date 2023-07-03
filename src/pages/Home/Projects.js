@@ -7,10 +7,9 @@ const cardContent = [
         linkLive: "https://ericfariaspinheiro.github.io/wordle-eric/",
         linkCode: "https://github.com/ericfariaspinheiro/wordle-eric"
     },
-    
     {
-        cardImage: "https://files.tecnoblog.net/wp-content/uploads/2020/03/pomodoro-timer.jpg",
-        name: "25 + 5 Clock",
+        cardImage: "https://styles.redditmedia.com/t5_2i035a/styles/communityIcon_s87h1zysdnf81.png",
+        name: "Study Space",
         linkLive: "https://ericfariaspinheiro.github.io/25plus5Timer/",
         linkCode: "https://github.com/ericfariaspinheiro/25plus5Timer"
     },

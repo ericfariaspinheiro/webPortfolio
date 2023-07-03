@@ -1,0 +1,98 @@
+.navBar {
+  position: fixed;
+  width: 100%;
+  background-color: #20073f;
+  border-bottom: white 2px solid;
+  z-index: 10;
+  transition: top 0.3s;
+}
+
+.navBarArea {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo-link {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+.navBarLogo {
+  width: fit-content;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+}
+
+.navBarLogo img {
+  height: 90%;
+}
+
+.burgerNav {
+  width: 40px;
+  height: 100%;
+  margin: 0 15px 0 15px;
+  display: none;
+}
+
+.burgerNav img {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.navBarUL {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-between;
+  font-size: 17px;
+  width: 40%;
+  margin-left: auto;
+}
+
+.navBarItems {
+  text-align: center;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navBarItems a {
+  padding: 15px 0 15px 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .navBar .open {
+    height: 14vh;
+  }
+
+  .burgerNav {
+    display: block;
+    z-index: 10;
+  }
+
+  .navBarUL {
+    position: fixed;
+    padding-top: 75px;
+    height: 20px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .navBarUL .open {
+    display: block;
+  }
+
+  .navBarItems a {
+    font-size: 14px;
+  }
+}
