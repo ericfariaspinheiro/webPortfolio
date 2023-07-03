@@ -12,7 +12,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .logo-link {
@@ -68,6 +68,10 @@
 
 .navBarItems a {
   padding: 15px 0 15px 0;
+}
+
+.navBarItems > a:hover {
+  text-shadow: 0 0 10px 1px white;
 }
 
 @media only screen and (max-width: 640px) {
